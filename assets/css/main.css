@@ -168,6 +168,7 @@
 }
 .header-search{
     position: relative;
+    padding-top: 20px;
 }
 .btn-search{
     display: block;
@@ -176,7 +177,6 @@
     padding: 14px 15px;
     position: absolute;
     right: 0;
-    top:23%;
     color: #BFBFBF;
     background-color: rgba(156, 156, 156, 0.411);
 }
@@ -199,11 +199,80 @@
     color: var(--subtitle-color);
     cursor: pointer;
 }
+.nav-mobile{
+    display: none;
+}
+.nav-btn{
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0;
+    background-color:rgba(156, 156, 156, 0.411);
+    padding: 14px 18px;
+    color: #BFBFBF;
+    border-radius: 4px; 
+}
+.nav-mobile-overlay{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.3);
+    display: none;
+}
+.nav-input{
+    position: absolute;
+    right: 0;
+}
+.nav-input:checked ~ .nav-mobile-overlay{
+    display: block;
+}
+.nav-mobile-content{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    width: 420px;
+    max-width: 100%;
+    color: #fff;
+    transform: translateX(100%);
+}
+.nav-input:checked ~  .nav-mobile-content{
+    transform: translateX(0);
+    transition: transform linear 0.3s;
+}
+.nav-mobile-close{
+    font-size: 2rem;
+    text-align: right;
+    background-color: #1a1a1a;
+    padding: 10px 30px;
+    color: #666;
+}
+.nav-close:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.nav-mobile-list{
+    list-style-type: none;
+    font-size: 1.8rem;
+}
+.nav-mobile-item{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.nav-mobile-item__link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-mobile-item__link:hover{
+    color: var(--subtitle-color);
+}
 .section1-item{
     padding-top: 26.6rem;
     padding-bottom: 26.6rem;
-    color: #fff;
-    
+    color: #fff;   
 }
 .section1-heading{
     font-size:6rem;
@@ -266,11 +335,19 @@
 
 
 
-@media (max-width:1113px) {
+@media (max-width:1023px) {
     .section1-info-inner{
        border-left: none;
     }
-
+    .nav-home-list{
+        left: -200px;
+    }
+    .btn-search{
+        right: 70px;
+    }
+    .nav-mobile{
+        display: block;
+    }
 }
 @media (max-width:650px) {
     .sub-title span {
@@ -290,5 +367,13 @@
     .section1-item {
         padding-top: 19.6rem;
         padding-bottom: 10.6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .btn-search{
+        display: none;
+    }
+    .nav-btn{
+        right: 10px;
     }
 }
