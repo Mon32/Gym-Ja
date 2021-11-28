@@ -274,7 +274,12 @@
     padding-bottom: 26.6rem;
     color: #fff;   
 }
-.section1-heading{
+.section2-item{
+    color: #fff;
+    padding-top: 16rem ;
+    padding-bottom: 16rem;
+}
+.section-heading{
     font-size:6rem;
     color: #000;
     background-color: #fff;
@@ -311,10 +316,14 @@
 .section1-info-item-description{
     line-height: 1.6;
 }
-.section2-wrap{
+.section2-wrap,.section3-wrap{
     width: 100%;
-    height: 500px;
-    background-color:#000;
+    background-color: #000;
+}
+.section2-item-img{
+    width: 100%;
+    padding-top: 60px;
+
 }
 .section1-info-item{
     height: 350px;
@@ -322,11 +331,100 @@
 .row-section1-info .section1-info-inner:last-child{
     border-right: 1px solid rgba(134, 134, 134, 0.322);
 }
-
-
-
-
-
+.section-subtitle span{
+    padding:5px 20px;
+    color: #fff;
+}
+.section2-heading,.section3-heading{
+    font-size: 5.2rem;
+}
+.section2-item ul{
+    list-style-type: none;
+    padding: 0 0 20px 0;
+    
+}
+.section2-item li{
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+.section2-icon{
+    color: var(--subtitle-color);
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.section3-header{
+    text-align: center;
+}
+.section3-description{
+    margin: 10px 0;
+    padding: 0 200px;
+}
+.section3-item{
+    height: 555px;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-top: 40px;
+    display: block;
+    text-decoration: none;
+}
+.section3-wrap{
+    text-align: center;
+}
+.section3-avatar{
+   height: 286px;
+   position: relative; 
+}
+.section3-stickers{
+    position: absolute;
+    font-size: 1.6rem;
+    background-color:#e93c4d;
+    padding: 20px 20px;
+    border-radius: 50%;
+    right: -20px;
+    top: 20px;
+}
+.sticker-sale{
+    padding: 20px 15px;
+    background-color:var(--btn-color) ;
+}
+.section3-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section3-info{
+    text-align: center;
+    padding: 0 16px 16px;
+}
+.section3-info h3{
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+}
+.section3-price-old{
+    font-size:1.8rem ;
+    margin-right: 6px;
+    text-decoration: line-through;
+    position: relative;
+    top: -2px;
+    color: #9e9e9e;
+}
+.section3-price-new{
+    font-size: 2.4rem;
+    color: var(--subtitle-color);
+}
+.section3-courses{
+    display: flex;
+    justify-content: space-around;
+}
+.section3-courses-list{
+    list-style-type: none;
+    font-size: 1.6rem;
+    padding: 0;
+    color: #9e9e9e;
+}
+.btn-section3{
+    padding: 60px 0;
+}
 
 
 
@@ -348,6 +446,15 @@
     .nav-mobile{
         display: block;
     }
+    .section2-item{
+        padding-top: 10rem;
+        padding-bottom:10rem;
+    }
+    .section3-description{
+        margin: 10px 0;
+        padding: 0 70px;
+    }
+    
 }
 @media (max-width:650px) {
     .sub-title span {
@@ -357,7 +464,7 @@
     .section1-heading {
         font-size: 4rem;
     }
-    .btn-section1{
+    .btn-section{
         text-align: center;
     }
     .btn-primary{
@@ -370,10 +477,23 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .section2-item{
+        padding-left: 1rem;
+        padding-right:1rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
     .btn-search{
         display: none;
     }
     .nav-btn{
         right: 10px;
+    }
+    .section2-item-img{
+        padding-top: 0;
+    }
+    .section3-description{
+        margin: 10px 0;
+        padding: 0 20px;
     }
 }
