@@ -141,11 +141,6 @@
 
 /* >= Tablet */
 @media (min-width: 740px) {
-    .row {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-
     .col {
         padding-left: 8px;
         padding-right: 8px;
@@ -277,11 +272,6 @@
 
 /* PC medium resolution > */
 @media (min-width: 1113px) {
-    .row {
-        margin-left: -16px;
-        margin-right: -16px;
-    }
-
     .row.sm-gutter {
         margin-left: -16px;
         margin-right: -16px;
@@ -426,10 +416,6 @@
     .wide {
         width: 644px;
     }
-    .wide .row {
-        margin-left: -16px;
-        margin-right: -16px;
-    }
 
     .wide .col {
         padding-left: 16px;
@@ -441,11 +427,6 @@
 @media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
         width: 984px;
-    }
-
-    .wide .row {
-        margin-left: -16px;
-        margin-right: -16px;
     }
 
     .wide .col {
